@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    This is the header
+  </header>
+  <div class="main">
+    <div class="content">
+      This is the content
+      <div
+          class="move"
+          draggable="true"
+          ondragstart="dragStart()"
+          ondragover="dragOver()"
+          ondrag="drag()"
+          ondragend="dragEnd()"
+          ondragenter="dragEnter()"
+          ondragleave="dragLeave()"
+          ondragexit="dragExit()"
+          onmouseover="mouseOver()"
+      >move me
+      </div>
+    </div>
+    <div class="side"
+         ondragenter="sideDragEnter()"
+         ondrag="sideDrag()"
+         ondragover="sideDragOver()"
+         ondragleave="sideDragLeave()"
+    >
+      This is the side
+    </div>
+  </div>
+
+  <footer>
+    This is the footer
+  </footer>
+
+</div>
+<script type="application/javascript" src="./index.js"></script>
+</body>
+</html>
